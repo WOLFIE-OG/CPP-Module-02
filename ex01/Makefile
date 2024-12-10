@@ -6,7 +6,7 @@
 #    By: otodd <otodd@student.42london.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 14:23:16 by otodd             #+#    #+#              #
-#    Updated: 2024/12/06 14:53:11 by otodd            ###   ########.fr        #
+#    Updated: 2024/12/10 18:34:43 by otodd            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CYAN		=	\033[1;36m
 NC			=	\033[0m
 
 CC			=	c++
-CXXFLAGS 	= 	-Wall -Wextra -Werror -std=c++98
+CXXFLAGS 	= 	-Wall -Wextra -Werror -std=c++98 -g
 NAME		=	fixed
 
 INCLUDE_DIR	=	include
