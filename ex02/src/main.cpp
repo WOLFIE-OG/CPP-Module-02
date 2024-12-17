@@ -6,7 +6,7 @@
 /*   By: otodd <otodd@student.42london.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:20:50 by otodd             #+#    #+#             */
-/*   Updated: 2024/12/17 13:24:16 by otodd            ###   ########.fr       */
+/*   Updated: 2024/12/17 14:21:07 by otodd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ void	multi(std::string letter, Fixed &var)
 	std::cout << letter << "--: " << var-- << std::endl;
 	std::cout << letter << ": " << var << std::endl;
 	std::cout << '(' << letter << " * 12): " << (var * 12) << std::endl;
-	std::cout << letter << ": " << var << std::endl;
 	std::cout << '(' << letter << " / 12): " << (var / 12) << std::endl;
+	std::cout << '(' << letter << " + 12): " << (var + 12) << std::endl;
 	std::cout << letter << ": " << var << std::endl;
 	std::cout << "--" << letter << ": " << --var << std::endl;
 	std::cout << letter << ": " << var << std::endl;
@@ -86,5 +86,16 @@ int	main(void)
 {
 	main_tests();
 	own_tests();
+	std::cout << "(0 + 0): " << (0 + 0) << std::endl;
+	std::cout << "(0 * 0): " << (0 * 0) << std::endl;
+	std::cout << "(0 - 0): " << (0 - 0) << std::endl;
+	// std::cout << "(0 / 0): " << (0 / 0) << std::endl;
+	Fixed	a(5.75f);
+	Fixed	b(2.5f);
+	Fixed	c = a + b;
+	std::cout << "c: " << c << std::endl;
+	Fixed	d = a * b;
+	std::cout << "d: " << d << std::endl;
+
 	return 0;
 }

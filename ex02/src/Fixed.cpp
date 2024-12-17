@@ -6,7 +6,7 @@
 /*   By: otodd <otodd@student.42london.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:21:21 by otodd             #+#    #+#             */
-/*   Updated: 2024/12/17 13:23:46 by otodd            ###   ########.fr       */
+/*   Updated: 2024/12/17 14:24:15 by otodd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,32 +47,32 @@ Fixed	&Fixed::operator=(const Fixed &src)
 
 bool	Fixed::operator<(const Fixed &f) const
 {
-	return this->toFloat() < f.toFloat();
+	return this->getRawBits() < f.getRawBits();
 }
 
 bool	Fixed::operator>(const Fixed &f) const
 {
-	return this->toFloat() > f.toFloat();
+	return this->getRawBits() > f.getRawBits();
 }
 
 bool	Fixed::operator>=(const Fixed &f) const
 {
-	return this->toFloat() >= f.toFloat();
+	return this->getRawBits() >= f.getRawBits();
 }
 
 bool	Fixed::operator<=(const Fixed &f) const
 {
-	return this->toFloat() <= f.toFloat();
+	return this->getRawBits() <= f.getRawBits();
 }
 
 bool	Fixed::operator==(const Fixed &f) const
 {
-	return this->toFloat() == f.toFloat();
+	return this->getRawBits() == f.getRawBits();
 }
 
 bool	Fixed::operator!=(const Fixed &f) const
 {
-	return this->toFloat() != f.toFloat();
+	return this->getRawBits() != f.getRawBits();
 }
 
 Fixed 	Fixed::operator++(int)
