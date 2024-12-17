@@ -16,3 +16,51 @@ jobs:
 
     - name: Run tree
       run: tree
+
+    - name: Make ex00
+      run: make
+      working-directory: ex00
+
+    - name: Re-Make ex00
+      run: make re
+      working-directory: ex00
+
+    - name: View contents of ex00
+      run: nm -C fixed
+      working-directory: ex00
+
+    - name: Run ex00
+      run: ./fixed
+      working-directory: ex00
+
+    - name: Make ex01
+      run: make
+      working-directory: ex01
+
+    - name: Re-Make ex01
+      run: make re
+      working-directory: ex01
+    
+    - name: View contents of ex01
+      run: nm -C fixed
+      working-directory: ex01
+
+    - name: Run ex01
+      run: ./fixed
+      working-directory: ex01
+
+    - name: Make ex02
+      run: make
+      working-directory: ex02
+
+    - name: Re-Make ex02
+      run: make re
+      working-directory: ex02
+
+    - name: View contents of ex02
+      run: nm -C fixed
+      working-directory: ex02
+
+    - name: Run ex02
+      run: ./fixed
+      working-directory: ex02
